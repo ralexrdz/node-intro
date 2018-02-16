@@ -1,0 +1,31 @@
+{
+  "name": "intro",
+  "version": "1.0.0",
+  "description": "## NodeJS y JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "nodeES6": "node --experimental-modules indexES6.mjs" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralexrdz/node-intro.git"
+  },
+  "keywords": [
+    "tutorial",
+    "learning"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralexrdz/node-intro/issues"
+  },
+  "homepage": "https://github.com/ralexrdz/node-intro#readme",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "fs-extra": "^5.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
