@@ -44,12 +44,39 @@
 
 ## ES6 y Functional Programing
 
--
+- [E6 Feature](http://es6-features.org)
+  - Las más importantes
+    - Arrow functions
+    - [Functional Programing](https://lodash.com/) (find, filter, map, reduce)
+    - import / export
+    - Spread operator (...array) y Object.assing
+    - def values en funciones y en def de var
+
 
 ## Require, import, exports
 
--
+- require (ES5)
+
+``` js
+let libName = require('./ruta/a/lib.js') // para importar
+```
+
+``` js
+module.export { <funciones o variables a exportar>} // para exportar
+```
+
+- ES6
+
+``` js
+import * as todaLaLibreria from './ruta/a/lib.js' // para importar con Babel
+// .mjs con modulos experimentales
+```
+
+``` js
+export { <funciones o variables a exportar>} // para exportar
+```
 
 
 
-## Babel, gulp, webpack
+## [Babel](https://babeljs.io), gulp, webpack
+

@@ -48,8 +48,7 @@ console.log(primerRaul);
 // reduce
 
 let suma = x.reduce((num, total) => {
-  if (num > 4) return total
-  else total += num
+  total += num
   return total
 }, 0)
 

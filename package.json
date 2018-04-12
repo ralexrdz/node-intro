@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "nodeES6": "node --experimental-modules indexES6.mjs" 
+    "nodeES6": "node --experimental-modules indexES6.mjs",
+    "babel": "node_modules/.bin/babel falla-ES6.js --experimental -d ./dist"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "fs-extra": "^5.0.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1"
   }
 }
