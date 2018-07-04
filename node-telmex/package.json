@@ -1,0 +1,19 @@
+{
+  "name": "prueba",
+  "version": "1.0.0",
+  "description": "Prueba en clase",
+  "main": "hola.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "intro",
+    "clase",
+    "prueba"
+  ],
+  "author": "Ralex",
+  "license": "ISC",
+  "dependencies": {
+    "cowsay": "^1.3.1"
+  }
+}
