@@ -2,11 +2,22 @@ let fs = require("fs")
 
 console.log(process.argv)
 
-let inicio = fs.readFileSync("inicio.txt").toString()
-// console.log("1", inicio)
-let fin = fs.readFileSync("fin.txt").toString()
-// console.log("2", fin)
+/// TODO SINCRONO
+let inicio
+try {
+    inicio = fs.readFileSync(process.argv[2]).toString()
+} catch (error) {
+    console.log("ERROR!!! el primero archivo no existe")
+    // throw error
+}
 
+// console.log("1", inicio)
+let fin = fs.readFileSync(process.argv[3]).toString()
+// console.log("2", fin)
+fs.writeFileSync(process.argv[4], inicio + fin)
+
+
+// TODO ASINCRONO
 // fs.readFile("inicio.txt", function (err, data) {
 //     if (err) console.log(err)
 //     console.log("1",data.toString())
@@ -20,8 +31,3 @@ let fin = fs.readFileSync("fin.txt").toString()
 //     })
 // })
 
-// console.log('contenido inicio.txt',contInicio.toString())
-// let contFin = fs.readFile("fin.txt")
-// console.log(contFin.toString())
-
-// fs.writeFileSync('juntos.txt', contInicio + contFin)
