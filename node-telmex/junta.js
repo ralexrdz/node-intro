@@ -1,20 +1,23 @@
 let fs = require("fs")
+function juntaArchivos (archPrimero, archSegundo, archDestino) {
+    let inicio
+    try {
+        inicio = fs.readFileSync(archPrimero).toString()
+    } catch (error) {
+        console.log("ERROR!!! el primero archivo no existe")
+        // throw error
+    }
 
-console.log(process.argv)
-
-/// TODO SINCRONO
-let inicio
-try {
-    inicio = fs.readFileSync(process.argv[2]).toString()
-} catch (error) {
-    console.log("ERROR!!! el primero archivo no existe")
-    // throw error
+    // console.log("1", inicio)
+    let fin = fs.readFileSync(archSegundo).toString()
+    // console.log("2", fin)
+    fs.writeFileSync(archDestino, inicio + fin)
 }
 
-// console.log("1", inicio)
-let fin = fs.readFileSync(process.argv[3]).toString()
-// console.log("2", fin)
-fs.writeFileSync(process.argv[4], inicio + fin)
+module.exports = {juntaArchivos}
+
+/// TODO SINCRONO
+
 
 
 // TODO ASINCRONO
